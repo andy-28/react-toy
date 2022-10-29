@@ -1,0 +1,59 @@
+#app { height: 100% }
+:root {
+    --swiper-image-ratio: 33.3%; /* ratio 16:9 = 56.25% */
+  
+    --swiper-width: 50%;
+    --swiper-inactive-scale: .85; /* makes the other slide smaller */
+    
+    /* responsive settings */
+    --swiper-mobile-width: 90%;
+    --swiper-mobile-inactive-scale: .95;
+  }
+
+  @font-face {
+    font-family: 'ChunkyRosieDemo-9YB3K';
+    src: url(../image/ChunkyRosieDemo-9YB3K.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    /* background: #EA7FF4; */
+}
+
+body {
+  background: #191919;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1{
+    font-size: 64px;
+    margin: 30px;
+    
+}
+
+.swiper {
+  width: 70%;
+  height: 470px;
+  
+  
+}
+.swiper-slide {
+    
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+  }
+
+
+
+
+
+

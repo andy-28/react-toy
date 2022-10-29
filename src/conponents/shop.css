@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  
+  }
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.container-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+}
+h4{
+    margin-top: 5px;
+}
+h5{
+    margin-top: 7px;
+}
+h6 {
+    margin-top: 10px;
+}
+
+.marketPlaceTypes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+.marketPlaces {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.marketPlaces .marketplace{
+    width: max-content;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.marketPlaces .marketplace .img{
+    margin-bottom: 1rem; 
+}
+
+.name {
+    margin-top: 10px;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    justify-content: space-between; 
+  }
+  .username {
+    color: #d3d3d3;
+    font-size: 0.8rem;
+    text-align: left;
+    
+    margin-bottom: 0.5rem;
+  }
+  .price-container {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    color: #02204e;
+  }
+  .price-container .price{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #6F2ADD;
+  }
+ 

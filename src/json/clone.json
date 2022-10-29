@@ -1,0 +1,107 @@
+[
+    {
+        "id": "1tE4nK",
+        "name": "CloneX #7",
+        "price": 300,
+        "image": "/images/01.png",
+        "currency": "ETH"
+    },
+    {
+        "id": "IuFGYl",
+        "name": "CloneX #15920",
+        "price": 289,
+        "image": "/images/pic01.png",
+        "currency": "ETH"
+    },
+    {
+        "id": "VfcByl",
+        "name": "CloneX #5",
+        "price": 392,
+        "image": "/images/pic02.png",
+        "currency": "ETH"
+    },
+    {
+        "id": "1yF2Ib",
+        "name": "CloneX #6",
+        "price": 200,
+        "image": "/images/pic03.png",
+        "currency": "ETH"
+    },
+    {
+        "id": "x5m8g3",
+        "name": "CloneX #4594",
+        "price": 231,
+        "image": "/images/pic04.png",
+        "currency": "ETH"
+    },
+    {
+        "id": "6Bh3pq",
+        "name": "CloneX #14433",
+        "price": 138,
+        "image": "/images/pic05.png",
+        "currency": "ETH"
+    },
+    {
+        "id": "6Bh3pq",
+        "name": "CloneX #17917",
+        "price": 195,
+        "image": "/images/pic06.png",
+        "currency": "ETH"
+    },
+    {
+        "id": "6Bh3pq",
+        "name": "CloneX #10080",
+        "price": 100,
+        "image": "/images/pic07.png",
+        "currency": "ETH"
+    },
+    {
+        "id": "6Bh3pq",
+        "name": "CloneX #16192",
+        "price": 120,
+        "image": "/images/pic08.png",
+        "currency": "ETH"
+    },
+    {
+        "id": "6Bh3pq",
+        "name": "CloneX #14649",
+        "price": 777,
+        "image": "/images/pic09.png",
+        "currency": "ETH"
+    },
+    {
+        "id": "6Bh3pq",
+        "name": "CloneX #7704",
+        "price": 299,
+        "image": "/images/pic10.png",
+        "currency": "ETH"
+    },
+    {
+        "id": "6Bh3pq",
+        "name": "CloneX #9039",
+        "price": 49,
+        "image": "/images/pic15.png",
+        "currency": "ETH"
+    },
+    {
+        "id": "6Bh3pq",
+        "name": "CloneX #12101",
+        "price": 50,
+        "image": "/images/pic12.png",
+        "currency": "ETH"
+    },
+    {
+        "id": "6Bh3pq",
+        "name": "CloneX #3",
+        "price": 333,
+        "image": "/images/pic13.png",
+        "currency": "ETH"
+    },
+    {
+        "id": "6Bh3pq",
+        "name": "CloneX #11893",
+        "price": 189,
+        "image": "/images/pic14.png",
+        "currency": "ETH"
+    }
+]
