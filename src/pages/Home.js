@@ -30,6 +30,7 @@ export default function Home() {
 
     <>
       <h1>Explore, collect, and Buy Toys</h1>
+
       <Swiper
         spaceBetween={100}
         centeredSlides={true}

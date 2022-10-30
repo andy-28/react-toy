@@ -18,6 +18,7 @@ export default function Navbar() {
 
       </Link>
       <ul>
+
         <CustomLink to="/home">Home</CustomLink>
 
         <CustomLink to="/pricing">Shop</CustomLink>
@@ -33,7 +34,7 @@ export default function Navbar() {
           <CustomLink to="/login"><FontAwesomeIcon icon={faUser} className='btnClose' /></CustomLink>
         </button>
         <button className="btn">
-          <CustomLink to="/cart"><FontAwesomeIcon icon={faBookmark} className='btnClose' /></CustomLink>
+          <CustomLink to="/cart"><FontAwesomeIcon icon={faCartShopping} className='btnClose' /></CustomLink>
         </button>
       </ul>
 
