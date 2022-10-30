@@ -83,7 +83,7 @@ export function Pricing(products) {
       <div className="container-box">
 
         <div className="marketPlaces">
-          {toy.map(({ image1, name, auther, price }) => {
+          {toy.map(({ image1, image2, image3, image4, name, auther, price }) => {
             return (
               <div className="marketplace">
                 <div className="image">
@@ -92,6 +92,11 @@ export function Pricing(products) {
                     <img src={image1} alt="marketplace" />
                   </Link>
 
+                </div>
+                <div className="row">
+                  <img src={image2} className="small-img" />
+                  <img src={image3} className="small-img" />
+                  <img src={image4} className="small-img" />
                 </div>
                 <div className="name">
                   <h4>{name}</h4>
