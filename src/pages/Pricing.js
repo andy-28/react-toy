@@ -7,7 +7,8 @@ import toy from '../json/toy.json'
 import clone from '../json/clone.json'
 import styled from "styled-components";
 import "../conponents/shop.css";
-
+import ScrollToTop from "react-scroll-to-top";
+import { ReactComponent as MySVG } from "../image/capslock.fill.svg";
 import Login from "./Login"
 import marketplace1 from "../image/01.png";
 import marketplace2 from "../image/02.png";
@@ -76,6 +77,7 @@ export function Pricing(products) {
   return (
 
     <>
+      <ScrollToTop smooth component={<MySVG />} />
       <h1>Shop</h1>
 
       <div className="container-box">
