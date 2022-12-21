@@ -3,6 +3,7 @@ import React from "react";
 // import { FaEthereum } from "react-icons/fa";
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
 import { Route, Routes } from "react-router-dom"
+import { useState, useEffect } from 'react'
 import toy from '../json/toy.json'
 import clone from '../json/clone.json'
 import styled from "styled-components";
@@ -19,6 +20,7 @@ import marketplace6 from "../image/06.png";
 import marketplace7 from "../image/07.png";
 import marketplace8 from "../image/08.png";
 import Button from "./Button";
+import ClipLoader from "react-spinners/ClipLoader";
 
 
 
@@ -74,6 +76,14 @@ export function Pricing(products) {
     },
   ];
 
+  const [loading, setLoading] = useState(false)
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+  }, [])
+
   return (
 
     <>
@@ -81,8 +91,17 @@ export function Pricing(products) {
       <h1>Shop</h1>
 
       <div className="container-box">
+      {
+        loading ?
+          <ClipLoader
+            color={'#6F2ADD'}
+            loading={loading}
 
-        <div className="marketPlaces">
+            size={80}
+
+          />
+          :
+          <div className="marketPlaces">
           {toy.map(({ image1, image2, image3, image4, name, auther, price }) => {
             return (
               <div className="marketplace">
@@ -111,6 +130,8 @@ export function Pricing(products) {
             );
           })}
         </div>
+      };
+        
       </div>
 
     </>
