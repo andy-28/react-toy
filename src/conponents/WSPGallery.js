@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import clone from '../json/clone.json'
-
+import ClipLoader from "react-spinners/ClipLoader";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faCircleChevronLeft,
@@ -41,6 +41,13 @@ const WSPGallery = ({ galleryImages }) => {
             ? setSlideNumber(0)
             : setSlideNumber(slideNumber + 1)
     }
+    const [loading, setLoading] = useState(false)
+        useEffect(() => {
+        setLoading(true)
+        setTimeout(() => {
+        setLoading(false)
+     }, 1000)
+    }, [])
 
     return (
         <div>
@@ -64,6 +71,15 @@ const WSPGallery = ({ galleryImages }) => {
 
             <div className='galleryWrap'>
                 {
+                    loading ?
+                    <ClipLoader
+                      color={'#6F2ADD'}
+                      loading={loading}
+          
+                      size={80}
+          
+                    />
+                    :
                     galleryImages && galleryImages.map((slide, index) => {
                         return (
                             <div
@@ -71,6 +87,7 @@ const WSPGallery = ({ galleryImages }) => {
                                 key={slide.id}
                                 onClick={() => handleOpenModal(index)}
                             >
+                            
                                 <img src={slide.img} alt='' />
                             </div>
                         )
