@@ -1,11 +1,19 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 article {
   width: 60%;
   margin: auto;
+}
+
+.cart_box{
+  display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
 }
 
 .cart_box img {

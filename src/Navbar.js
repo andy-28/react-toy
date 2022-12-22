@@ -23,7 +23,7 @@ export default function Navbar() {
 
         <CustomLink to="/home">Home</CustomLink>
 
-        <CustomLink to="/amazon">Shop</CustomLink>
+        <CustomLink to="/pricing">Shop</CustomLink>
         <CustomLink to="/gallery">Explore</CustomLink>
 
 

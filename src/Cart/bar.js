@@ -18,7 +18,7 @@ const Bar = ({ setShow, size }) => {
       <div className="nav_box">
         
         <p className="my_shop" onClick={() => setShow(true)}>
-          <FontAwesomeIcon icon={faUser} className='btnClose' />
+          O
         </p>
         <div className="cart" onClick={() => setShow(false)}>
             <FontAwesomeIcon icon={faUser} className='btnClose' />
