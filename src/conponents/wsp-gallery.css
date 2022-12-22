@@ -24,9 +24,14 @@
   }
   
   .galleryWrap .single img {
+    opacity: 1;
     max-width: 100%;
-  }
+    transition: .3s ease-in-out;
 
+  }
+  .galleryWrap .single img:hover {
+    opacity: .3;
+  }
   
   /* .galleryWrap .single img:hover {
     transform: scale(1.02);

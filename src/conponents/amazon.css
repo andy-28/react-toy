@@ -21,6 +21,14 @@ section {
     justify-content: center; 
     gap: 2rem;
 }
+.container{
+  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; 
+  gap: 2rem;
+}
 .marketPlaces {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

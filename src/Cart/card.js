@@ -5,6 +5,8 @@ import "../conponents/shop.css";
 const Cards = ({ item, handleClick }) => {
   const { auther, name, price, image1, image2, image3, image4 } = item;
   return (
+    <>
+    
     <div className="marketplace">
       <div className="image_box">
         <img src={image1} alt="" />
@@ -27,6 +29,8 @@ const Cards = ({ item, handleClick }) => {
         </button>
       </div>
     </div>
+    </>
+    
   );
 };
 

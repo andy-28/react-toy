@@ -33,14 +33,14 @@ const Cart = ({ cart, setCart, handleChange }) => {
             
           </div>
           <div>
-            <span>NT $ {item.price}</span>
+            <p className="price">NT $ {item.price}</p>
             <button onClick={() => handleRemove(item.id)}>Remove</button>
           </div>
         </div>
       ))}
       <div className="total">
-        <span>Total Price of your Cart</span>
-        <span>NT $ {price}</span>
+        <p>Total Price of your Cart</p>
+        <p className="price">NT $ {price}</p>
       </div>
     </article>
   );
