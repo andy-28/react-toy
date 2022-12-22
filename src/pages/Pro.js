@@ -30,11 +30,10 @@ const Pro = () => {
   return (
     <React.Fragment>
     <Bar setShow={setShow} size={cart.length} />
-    {show ? (
-      
-      <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
-    ) : (
+    {show ? (  
       <Amazon handleClick={handleClick} />
+    ) : (
+      <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
       
     )}
   </React.Fragment>

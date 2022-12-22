@@ -20,13 +20,13 @@ nav {
 .my_shop {
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
-  background-color: #ffffff;
+  color: #ffffff;
   font-family: cursive;
   cursor: pointer;
 }
 .cart {
   cursor: pointer;
+  /* background-color: #ffffff; */
 }
 .cart span:nth-child(1) {
   font-size: 2rem;

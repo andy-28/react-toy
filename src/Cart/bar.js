@@ -1,17 +1,27 @@
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
 import React from "react";
 import "../conponents/navbar.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faCircleChevronLeft,
+  faCircleChevronRight,
+  faPlusSquare,
+  faBookmark,
+  faCartShopping,
+  faUser,
+} from '@fortawesome/free-solid-svg-icons'
 
-const Navbar = ({ setShow, size }) => {
+
+const Bar = ({ setShow, size }) => {
   return (
     <nav>
       <div className="nav_box">
-        <span className="my_shop" onClick={() => setShow(true)}>
-          My Shoping
-        </span>
+        
+        <p className="my_shop" onClick={() => setShow(true)}>
+          <FontAwesomeIcon icon={faUser} className='btnClose' />
+        </p>
         <div className="cart" onClick={() => setShow(false)}>
-          <span>
-            <i className="fas fa-cart-plus"></i>
-          </span>
+            <FontAwesomeIcon icon={faUser} className='btnClose' />
           <span>{size}</span>
         </div>
       </div>
@@ -19,4 +29,4 @@ const Navbar = ({ setShow, size }) => {
   );
 };
 
-export default Navbar;
+export default Bar;
