@@ -10,6 +10,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 
+
+
 export default function Navbar() {
   return (
     <nav className="nav">
@@ -34,8 +36,15 @@ export default function Navbar() {
           <CustomLink to="/login"><FontAwesomeIcon icon={faUser} className='btnClose' /></CustomLink>
         </button>
         <button className="btn">
-          <CustomLink to="/cart"><FontAwesomeIcon icon={faCartShopping} className='btnClose' /></CustomLink>
+          <CustomLink to="/amazon"><FontAwesomeIcon icon={faCartShopping} className='btnClose' /></CustomLink>
         </button>
+        
+        <button className="btn">
+          <CustomLink to="/Pro"><FontAwesomeIcon icon={faCartShopping} className='btnClose' /></CustomLink>
+        </button>
+       
+        
+        
       </ul>
 
     </nav>

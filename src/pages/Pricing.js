@@ -21,6 +21,8 @@ import marketplace7 from "../image/07.png";
 import marketplace8 from "../image/08.png";
 import Button from "./Button";
 import ClipLoader from "react-spinners/ClipLoader";
+import AddToCart from "../conponents/AddToCart"
+
 
 
 
@@ -102,7 +104,7 @@ export function Pricing(products) {
           />
           :
           <div className="marketPlaces">
-          {toy.map(({ image1, image2, image3, image4, name, auther, price }) => {
+          {toy.map(({ image1, image2, image3, image4, name, auther, price, item, handleClick}) => {
             return (
               <div className="marketplace">
                 <div className="image">
@@ -128,6 +130,7 @@ export function Pricing(products) {
                   <h5 className="price">$ {price}</h5>
 
                   <button className="add">Add to cart</button>
+                  
                   
                 </div>
               </div>

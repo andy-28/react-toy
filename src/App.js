@@ -5,11 +5,15 @@ import About from "./pages/About"
 import Gallery from "./pages/Gallery"
 import Create from "./pages/Create"
 import Login from "./pages/Login"
-import Cart from "./pages/Cart"
+import Cart from "./Cart/cart"
+import CartSummary from "./conponents/CartSummary"
 import Register from "./pages/Register"
 import ProductDetail from "./pages/ProductDetail"
-
+import Amazon from "./Cart/amazon";
 import Footer from "./pages/Footer"
+import Pro from "./pages/Pro"
+
+
 import { Route, Routes } from "react-router-dom"
 
 function App() {
@@ -26,7 +30,10 @@ function App() {
           <Route path="/Create" element={<Create />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Cart" element={<Cart />} />
+          <Route path="/CartSummary" element={<CartSummary />} />
           <Route path="/Register" element={<Register />} />
+          <Route path="/Amazon" element={<Amazon />} />
+          <Route path="/Pro" element={<Pro />} />
           <Route path="/ProductDetail" element={<ProductDetail />} />
           <Route path="/product" element={<product />} />
 

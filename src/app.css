@@ -26,7 +26,7 @@ form{
     border: none;
     background-color: #6F2ADD;
     color: white;
-    
+    list-style: none;
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
