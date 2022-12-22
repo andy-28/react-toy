@@ -35,9 +35,6 @@ export default function Navbar() {
         <button className="btn">
           <CustomLink to="/login"><FontAwesomeIcon icon={faUser} className='btnClose' /></CustomLink>
         </button>
-        <button className="btn">
-          <CustomLink to="/amazon"><FontAwesomeIcon icon={faCartShopping} className='btnClose' /></CustomLink>
-        </button>
         
         <button className="btn">
           <CustomLink to="/Pro"><FontAwesomeIcon icon={faCartShopping} className='btnClose' /></CustomLink>

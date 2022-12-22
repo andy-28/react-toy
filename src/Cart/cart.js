@@ -27,22 +27,20 @@ const Cart = ({ cart, setCart, handleChange }) => {
         <div className="cart_box" key={item.id}>
           <div className="cart_img">
             <img src={item.image1} alt="" />
-            <p>{item.name}</p>
+            <p className="name">{item.name}</p>
           </div>
           <div>
-            <button onClick={() => handleChange(item, 1)}>+</button>
-            <button>{item.amount}</button>
-            <button onClick={() => handleChange(item, -1)}>-</button>
+            
           </div>
           <div>
-            <span>{item.price}</span>
+            <span>NT $ {item.price}</span>
             <button onClick={() => handleRemove(item.id)}>Remove</button>
           </div>
         </div>
       ))}
       <div className="total">
         <span>Total Price of your Cart</span>
-        <span>Rs - {price}</span>
+        <span>NT $ {price}</span>
       </div>
     </article>
   );

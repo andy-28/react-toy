@@ -27,13 +27,13 @@ const Pro = () => {
 
   return (
     <React.Fragment>
-      <Navbar setShow={setShow} size={cart.length} />
+      <Amazon handleClick={handleClick} />
       {show ? (
-        <Amazon handleClick={handleClick} />
-      ) : (
-        <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
-       
-      )}
+          <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
+        ) : (
+          
+          <Amazon handleClick={handleClick} />
+        )}
     </React.Fragment>
   );
 };

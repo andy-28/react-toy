@@ -26,6 +26,7 @@ import AddToCart from "../conponents/AddToCart"
 
 
 
+
 export function Pricing(products) {
   const marketPlaceData = [
     {
@@ -85,6 +86,8 @@ export function Pricing(products) {
       setLoading(false)
     }, 1000)
   }, [])
+
+  
 
   return (
 
