@@ -9,8 +9,8 @@ article {
 }
 
 .cart_box img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 .cart_img {
   display: flex;
@@ -44,17 +44,17 @@ article {
   border: none;
   outline: none;
   color: white;
-  background-color: skyblue;
-  border-radius: 5px;
+  background-color: #6F2ADD;
+  
   cursor: pointer;
 }
 .cart_box div:nth-child(3) button:hover {
-  background-color: darkseagreen;
+  background-color: #7E68FF;
 }
 .cart_box div:nth-child(3) span {
-  background-color: lightgreen;
+  background-color: #6F2ADD;
   padding: 5px 10px;
-  border-radius: 5px;
+  color: white;
   margin-right: 10px;
 }
 
@@ -65,13 +65,13 @@ article {
 
 .total span:nth-child(1) {
   font-size: 2rem;
-  color: skyblue;
+  color: #ffffff;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
 .total span:nth-child(2) {
   font-size: 2rem;
-  color: green;
+  color: #ffffff;
   font-weight: bold;
 }

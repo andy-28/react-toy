@@ -31,6 +31,11 @@ section {
   width: 300px;
   
 }
+.row{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
 .cards:hover {
   box-shadow: 0 10px 10px 10px rbga(0, 0, 0, 0.1);
   cursor: pointer;

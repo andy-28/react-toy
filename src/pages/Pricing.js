@@ -21,7 +21,7 @@ import marketplace7 from "../image/07.png";
 import marketplace8 from "../image/08.png";
 import Button from "./Button";
 import ClipLoader from "react-spinners/ClipLoader";
-import AddToCart from "../conponents/AddToCart"
+
 
 
 
@@ -132,8 +132,10 @@ export function Pricing(products) {
                 <div className="price-container">
                   <h5 className="price">$ {price}</h5>
 
-                  <button className="add">Add to cart</button>
                   
+                  <button className="add" onClick={() => handleClick(item)}>
+                  Add to Cart
+                  </button>
                   
                 </div>
               </div>

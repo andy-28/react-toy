@@ -40,6 +40,8 @@ export default function Navbar() {
           <CustomLink to="/Pro"><FontAwesomeIcon icon={faCartShopping} className='btnClose' /></CustomLink>
         </button>
        
+       
+       
         
         
       </ul>

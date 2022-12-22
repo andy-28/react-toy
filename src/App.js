@@ -34,6 +34,7 @@ function App() {
           <Route path="/Register" element={<Register />} />
           <Route path="/Amazon" element={<Amazon />} />
           <Route path="/Pro" element={<Pro />} />
+          
           <Route path="/ProductDetail" element={<ProductDetail />} />
           <Route path="/product" element={<product />} />
 

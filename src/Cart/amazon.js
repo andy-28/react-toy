@@ -5,6 +5,7 @@ import Cards from "./card";
 import "../conponents/amazon.css";
 
 const Amazon = ({ handleClick }) => {
+  
   return (
     <div className="container-box">
      

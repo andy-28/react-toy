@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Amazon from "../Cart/amazon";
-import Navbar from "../Cart/navbar";
+import Bar from "../Cart/bar";
 import Cart from "../Cart/cart";
+
+
 
 const Pro = () => {
   const [show, setShow] = useState(true);
@@ -27,14 +29,15 @@ const Pro = () => {
 
   return (
     <React.Fragment>
+    <Bar setShow={setShow} size={cart.length} />
+    {show ? (
+      
+      <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
+    ) : (
       <Amazon handleClick={handleClick} />
-      {show ? (
-          <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
-        ) : (
-          
-          <Amazon handleClick={handleClick} />
-        )}
-    </React.Fragment>
+      
+    )}
+  </React.Fragment>
   );
 };
 
