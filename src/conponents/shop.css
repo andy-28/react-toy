@@ -23,7 +23,7 @@ h4{
     margin-top: 5px;
 }
 h5{
-    margin-top: 7px;
+    /* margin-top: 7px; */
 }
 h6 {
     margin-top: 10px;
@@ -78,13 +78,27 @@ h6 {
     display: flex;
     justify-content: space-between;
     color: #02204e;
+    margin-top: 15px;
   }
   .price-container .price{
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    display: flex;
+    display: row;
+    font-size: 16px;
     justify-content: space-between;
     color: #ffffff;
     padding: 10px 20px;
+    border: 3px solid #6F2ADD;
+    /* background-color: #6F2ADD; */
+    
+  }
+  .price-container .add{
+    
+    display: row;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 0px;
+    cursor: pointer;
     background-color: #6F2ADD;
   }
  

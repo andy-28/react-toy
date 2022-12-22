@@ -122,9 +122,13 @@ export function Pricing(products) {
 
                 </div>
                 <h6 className="username">{auther}</h6>
+
+                
                 <div className="price-container">
                   <h5 className="price">$ {price}</h5>
 
+                  <button className="add">Add to cart</button>
+                  
                 </div>
               </div>
             );
