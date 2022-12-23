@@ -7,8 +7,9 @@ import {
   faBookmark,
   faCartShopping,
   faUser,
-  faMessage,
-  faBars
+  faMoon,
+  faBell,
+  faPaperPlane
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -38,14 +39,14 @@ export default function Navbar() {
         
        
         <button className="btn">
-          <CustomLink to="/about"><FontAwesomeIcon icon={faMessage} className='btnClose' /></CustomLink>
+          <CustomLink to="/about"><FontAwesomeIcon icon={faBell} className='btnClose' /></CustomLink>
         </button>
-       
+        
         <button className="btn">
           <CustomLink to="/login"><FontAwesomeIcon icon={faUser} className='btnClose' /></CustomLink>
         </button>
         <button className="btn">
-          <CustomLink to="/Profile"><FontAwesomeIcon icon={faBars} className='btnClose' /></CustomLink>
+          <CustomLink to="/Profile"><FontAwesomeIcon icon={faMoon} className='btnClose' /></CustomLink>
         </button>
         
         

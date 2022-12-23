@@ -57,8 +57,12 @@ const Login = () => {
                         onChange={onChange}
                     />
                 ))}
-                <button className="Submit-btn">Sign in</button>
-                
+                <button className="Submit-btn">
+                <Link to={`/profile`} className="Submit-btn">
+                    Sign in
+                </Link>
+                </button>
+               
                 <p className="signtxt">Don’t have an account?
                     <button className="btn">
                         <CustomLink to="/register" className="login-btn">Create one</CustomLink>

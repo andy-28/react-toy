@@ -23,6 +23,14 @@ const Amazon = ({ handleClick }) => {
   return (
     <>
     <ScrollToTop smooth component={<MySVG />} />
+    <div className="row2">
+        <h4>盲盒玩具</h4>
+        <h4>樹脂玩具</h4>
+        <h4>搪膠玩具</h4>
+        <h4>日本軟膠</h4>
+        <h4>可動人偶</h4>
+
+      </div>
     <div className="container">
     {
       loading ?

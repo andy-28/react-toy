@@ -11,7 +11,7 @@ import "../conponents/shop.css";
 import ScrollToTop from "react-scroll-to-top";
 import { ReactComponent as MySVG } from "../image/capslock.fill.svg";
 import Login from "./Login"
-import marketplace1 from "../image/01.png";
+import marketplace1 from "../image/profile.png";
 import marketplace2 from "../image/02.png";
 import marketplace3 from "../image/03.png";
 import marketplace4 from "../image/04.png";
@@ -44,9 +44,21 @@ export function Profile(products) {
 
     <>
       <ScrollToTop smooth component={<MySVG />} />
-      <h1>Shop</h1>
+      <div className="row1">
+        <img src={marketplace1} alt="marketplace" />
+        <h1>Andy</h1>
+        </div>
+        <div className="row2">
+            <h4>Post</h4>
+            <h4>Collections</h4>
+            <h4>Like</h4>
+            <h4>About</h4>
+            <h4>Tag</h4>
+        </div>
+        
+      
 
-      <div className="container-box">
+      <div className="container-box1">
       {
         loading ?
           <ClipLoader
@@ -57,38 +69,23 @@ export function Profile(products) {
 
           />
           :
+          
           <div className="marketPlaces">
-          {toy.map(({ image1, image2, image3, image4, name, auther, price, item, handleClick}) => {
+          {toy.map(({ image1, image2, image3, img, name, auther, price, item, handleClick}) => {
             return (
               <div className="marketplace">
                 <div className="image">
-                  <Link to={`/ProductDetail`}>
-
-                    <img src={image1} alt="marketplace" />
-                  </Link>
-
+                    <img src={img} alt="marketplace" />
                 </div>
-                <div className="row">
-                  <img src={image2} className="small-img" />
-                  <img src={image3} className="small-img" />
-                  <img src={image4} className="small-img" />
-                </div>
+                
                 <div className="name">
-                  <h4>{name}</h4>
+                
 
                 </div>
-                <h6 className="username">{auther}</h6>
+                
 
                 
-                <div className="price-container">
-                  <h5 className="price">$ {price}</h5>
-
-                  
-                  <button className="add" onClick={() => handleClick(item)}>
-                  Add to Cart
-                  </button>
-                  
-                </div>
+                
               </div>
             );
           })}

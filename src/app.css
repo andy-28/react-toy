@@ -26,6 +26,7 @@ form{
     border: none;
     background-color: #6F2ADD;
     color: white;
+    text-decoration: none;
     list-style: none;
     font-weight: bold;
     font-size: 18px;
@@ -33,6 +34,7 @@ form{
     margin-top: 15px;
     margin-bottom: 10px;
 }
+
 .login-btn{
   margin: 10px;
   text-decoration: none;

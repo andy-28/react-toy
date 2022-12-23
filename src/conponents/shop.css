@@ -18,6 +18,26 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center; 
+    gap: 0rem;
+}
+.container-box1{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; 
+  gap: 0rem;
+}
+h4{
+  padding: 10px 20px 10px 20px;
+  background-color: #242424;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+h4:hover{
+  background-color:  #6F2ADD;
+  color: #ffffff;
 }
 h4{
     margin-top: 5px;
@@ -28,6 +48,7 @@ h5{
 h6 {
     margin-top: 10px;
 }
+
 
 .marketPlaceTypes {
     display: flex;
@@ -56,6 +77,27 @@ h6 {
   margin-top: 5px;
 }
 .row .small-img{
+  width: 100px;
+  height: 100px;
+}
+
+.row1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.row2{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.row1 img{
+  border-radius: 50%;
   width: 100px;
   height: 100px;
 }
@@ -100,5 +142,10 @@ h6 {
     border: 0px;
     cursor: pointer;
     background-color: #6F2ADD;
+  }
+  .price-container .add:hover{
+    
+    
+    background-color: #7E68FF;
   }
  
