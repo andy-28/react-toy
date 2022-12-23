@@ -17,7 +17,7 @@ const Cards = ({ item, handleClick }) => {
         <img src={image4} className="small-img" />
       </div>
       <div className="name">
-        <h4>{name}</h4>
+        <h3>{name}</h3>
       </div>
       <h6 className="username">{auther}</h6>
 

@@ -8,8 +8,8 @@ import {
   faCartShopping,
   faUser,
   faMoon,
-  faBell,
-  faPaperPlane
+  faBell
+  
 } from '@fortawesome/free-solid-svg-icons'
 
 
