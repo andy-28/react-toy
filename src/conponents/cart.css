@@ -29,7 +29,9 @@ article {
   font-weight: bold;
   margin-left: 10px;
 }
-
+.price{
+  padding: 15px;
+}
 .cart_box {
   display: flex;
   align-items: center;

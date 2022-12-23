@@ -9,7 +9,8 @@ import {
   faBookmark,
   faCartShopping,
   faUser,
-  faHome
+  faHome,
+  faRefresh
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -19,9 +20,9 @@ const Bar = ({ setShow, size }) => {
       <div className="nav_box">
         
         <p className="my_shop" onClick={() => setShow(true)}>
-          <FontAwesomeIcon icon={faHome} className='btnClose' />
+          <FontAwesomeIcon icon={faRefresh} className='btnClose' />
         </p>
-        <h1>Shop</h1>
+        <h1 onClick={() => setShow(true)}>Shop</h1>
         <div className="cart" onClick={() => setShow(false)}>
             <FontAwesomeIcon icon={faCartShopping} className='btnClose' />
           <span>{size}</span>

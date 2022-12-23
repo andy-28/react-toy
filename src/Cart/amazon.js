@@ -4,6 +4,11 @@ import toy from '../json/toy.json'
 import Cards from "./card";
 import "../conponents/amazon.css";
 import ClipLoader from "react-spinners/ClipLoader";
+import ScrollToTop from "react-scroll-to-top";
+import { ReactComponent as MySVG } from "../image/capslock.fill.svg";
+
+
+
 
 const Amazon = ({ handleClick }) => {
 
@@ -17,7 +22,7 @@ const Amazon = ({ handleClick }) => {
   
   return (
     <>
-    
+    <ScrollToTop smooth component={<MySVG />} />
     <div className="container-box">
     {
       loading ?
