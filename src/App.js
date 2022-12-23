@@ -12,6 +12,7 @@ import ProductDetail from "./pages/ProductDetail"
 import Amazon from "./Cart/amazon";
 import Footer from "./pages/Footer"
 import Pro from "./pages/Pro"
+import Profile from "./pages/profile"
 
 
 import { Route, Routes } from "react-router-dom"
@@ -34,7 +35,7 @@ function App() {
           <Route path="/Register" element={<Register />} />
           <Route path="/Amazon" element={<Amazon />} />
           <Route path="/Pro" element={<Pro />} />
-          
+          <Route path="/Profile" element={<Profile />} />
           <Route path="/ProductDetail" element={<ProductDetail />} />
           <Route path="/product" element={<product />} />
 

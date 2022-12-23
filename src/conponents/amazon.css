@@ -14,22 +14,31 @@ section {
   grid-template-columns: repeat(4, 1fr);
   /* grid-template-rows: auto; */
 }
+.container {
+  /* margin: 1rem;
+  text-align: center; */
+  
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
 .container-box{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center; 
-    gap: 2rem;
+    gap: 6rem;
 }
-.container{
+/* .container{
   grid-template-columns: repeat(4, 1fr);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center; 
   gap: 2rem;
-}
-.marketPlaces {
+} */
+.marketPlace {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;

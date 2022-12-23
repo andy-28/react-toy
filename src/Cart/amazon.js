@@ -23,7 +23,7 @@ const Amazon = ({ handleClick }) => {
   return (
     <>
     <ScrollToTop smooth component={<MySVG />} />
-    <div className="container-box">
+    <div className="container">
     {
       loading ?
           <ClipLoader
@@ -34,7 +34,7 @@ const Amazon = ({ handleClick }) => {
 
           />
           :
-      <div className="container">
+      <div className="container-box">
         {toy.map((item) => (
           <Cards key={item.id} item={item} handleClick={handleClick} />
         ))}
