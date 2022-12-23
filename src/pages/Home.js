@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -20,18 +20,37 @@ import mov7 from "../video/07.mp4"
 import mov8 from "../video/08.mp4"
 import mov9 from "../video/09.mp4"
 import mov10 from "../video/10.mp4"
+import ClipLoader from "react-spinners/ClipLoader";
+
 // import "./styles.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function Home() {
+  const [loading, setLoading] = useState(false)
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+  }, [])
   return (
 
     <>
       <h1>Explore, collect, and Buy Toys</h1>
 
-      <Swiper
+      {
+        loading ?
+        <ClipLoader
+          color={'#6F2ADD'}
+          loading={loading}
+
+          size={80}
+
+        />
+        :
+        <Swiper
         spaceBetween={100}
         centeredSlides={true}
         loop={true}
@@ -73,6 +92,8 @@ export default function Home() {
         </SwiperSlide>
 
       </Swiper>
+      }
+      
     </>
   );
 }
