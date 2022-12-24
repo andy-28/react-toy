@@ -4,7 +4,7 @@ import {
   faCircleChevronLeft,
   faCircleChevronRight,
   faPlusSquare,
-  faBookmark,
+  faSearch,
   faCartShopping,
   faUser,
   faMoon,
@@ -32,15 +32,15 @@ export default function Navbar() {
 
       </ul>
       <ul>
+
+      <button className="btn">
+          <CustomLink to="/about"><FontAwesomeIcon icon={faSearch} className='btnClose' /></CustomLink>
+        </button>
         <button className="btn">
           <CustomLink to="/create"><FontAwesomeIcon icon={faPlusSquare} className='btnClose' /></CustomLink>
         </button>
         
         
-       
-        <button className="btn">
-          <CustomLink to="/about"><FontAwesomeIcon icon={faBell} className='btnClose' /></CustomLink>
-        </button>
         
         <button className="btn">
           <CustomLink to="/login"><FontAwesomeIcon icon={faUser} className='btnClose' /></CustomLink>
