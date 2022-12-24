@@ -35,7 +35,7 @@ export function Profile(products) {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 1000)
+    }, 3000)
   }, [])
 
   

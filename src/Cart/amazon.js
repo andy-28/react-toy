@@ -17,7 +17,7 @@ const Amazon = ({ handleClick }) => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 2000)
+    }, 3000)
   }, [])
   
   return (
